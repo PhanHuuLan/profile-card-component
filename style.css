@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@300&family=Rubik:ital,wght@0,400;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: var(--very-dark-desaturated-blue);
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: -90% -500px, 170% 400px;
+    background-repeat: no-repeat;
+    background: var(--dark-cyan);
+    min-height: 100vh;
+}
+.container {
+    max-width: 350px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    height: 400px;
+
+}
+.card-header {
+    padding-top: 100px;
+    max-height: 150px;
+    max-width: 350px;
+    background: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+}
+.img-sec {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    border: 5px solid hsl(0, 0%, 100%);
+}
+.img-sec img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.card-body {
+    margin-top: 20px;
+    height: 250px;
+    line-height: 1.8rem;
+    
+}
+.card-body .name {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.card-body span {
+    color: var(--dark-gray);
+    font-weight: 400;
+    font-size: 1.2rem;
+
+}
+.card-body .city {
+    padding-top: 10px;
+    color: var(--dark-gray);
+}
+.card-activity {
+    border-top: 1px solid var(--dark-gray);
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-right: 40px;
+    padding-left: 40px;
+    align-items: center;
+}
+.card-activity .act {
+    color: var(--dark-gray);
+    font-weight: 300;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
